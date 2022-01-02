@@ -2,8 +2,8 @@ This app is a basic recreation of the New York Times.
 
 To get news, it uses the New York Times Newswire API (https://developer.nytimes.com/docs/timeswire-product/1/overview)
 To results are indexing and displayed via Algolia (https://www.algolia.com)
+Results are filterable by major section
 
 Future Enhancements:
 - Auto indexing via NYT API to Algolia (currently manual)
-- Filter results by category
 - Regroup homepage - show multiple categories in single view

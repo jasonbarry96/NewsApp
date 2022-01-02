@@ -49,6 +49,21 @@ search.addWidgets([
             length: 20,
         }),
     ]),
+    instantsearch.widgets.menu({
+        container: "#sections",
+        attribute: "section",
+        cssClasses: {
+          list: 'refinementList',
+        },
+        templates: {
+          item: `
+            <a href="{{url}}" style="{{#isRefined}}font-weight: bold{{/isRefined}}">
+              <span class="refinement">{{label}}</span>
+            </a>
+          `,
+        },
+        sortBy: ['count:desc', 'name:asc'],
+    }),
 ]);
 
 // search.addWidgets([
