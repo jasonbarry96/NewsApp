@@ -5,17 +5,12 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "start": "parcel index.html --port 3000",
-    "build": "parcel build index.html",
-    "type": "module"
-  },
-  "devDependencies": {
-    "concurrently": "^6.4.0",
-    "parcel-bundler": "1.12.5"
+    "start": "http-server -c-1",
+    "build": "http-server build index.html"
   },
   "dependencies": {
     "algoliasearch": "^4.11.0",
-    "instantsearch.js": "^4.36.0",
-    "parcel": "^2.0.1"
+    "http-server": "^14.0.0",
+    "instantsearch.js": "^4.36.0"
   }
 }

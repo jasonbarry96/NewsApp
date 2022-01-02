@@ -9,23 +9,23 @@ const search = instantsearch({
   searchClient,
 });
 
-var hitTemplate = '<div class="hit">' +
+var hitTemplate = '<div onclick="window.open(`{{url}}`,`_blank`);" class="hit">' +
     '<div class="hit-left">' +
-        '<div class="hit-photo"><img src=\"{{thumbnail_standard}}\"></img></div>' +
+        '<div class="hit-photo"><img src="{{thumbnail_standard}}"></img></div>' +
     '</div>' +
     '<div class="hit-body">' +
-        '<div class="hit-title"><a href="{url}">{{title}}</a></div>' +
+        '<div class="hit-title">{{title}}</div>' +
         '<div class="hit-abstract">{{abstract}}</div>' +
     '</div>'+
     '</div>';
 
-var firstHitTemplate = '<div class="first-hit">' +
+var firstHitTemplate = '<div onclick="window.open(`{{url}}`,`_blank`);" class="first-hit">' +
     '<div class="first-hit-body">' +
-        '<div class="first-hit-title"><a href="{url}">{{title}}</a></div>' +
+        '<div class="first-hit-title">{{title}}</div>' +
         '<div class="first-hit-abstract">{{abstract}}</div>' +
     '</div>'+
     '<div class="first-hit-photo">' +
-        '<div><img src=\"{{fullImgURL}}\"></img></div>' +
+        '<div><img src="{{fullImgURL}}"></img></div>' +
     '</div>' +
     '</div>';
 

@@ -1,5 +1,5 @@
 body{
-  background-color: lightgrey;
+  background-color: white;
 }
 p{
   color: blue;
@@ -8,21 +8,25 @@ ol {
   list-style-type: none;
 }
 a{
-  color:black;
+  color: hsl(0deg 0% 7%);
+  text-decoration: none;
 }
 div#relHits{
   width: 100%;
   float: left;
   overflow:hidden;
+  padding-right: 5%;
 }
 .hit-title{
   font-size: 30px;
   font-weight: bold;
+  color: hsl(0deg 0% 7%);
 }
 .hit {
   margin-bottom: 10px;
   height: 150px;
-  border: 1px solid #f3f3f3;
+  border: 1px solid hsl(0deg 0% 75%);
+  cursor: pointer;
 }
 .hit-left{
   width: 15%;
@@ -30,29 +34,27 @@ div#relHits{
   overflow:hidden;
 }
 .hit-body{
-  width: 85%;
+  width: 81%;
   float:left;
+  padding:2%
 }
 .hit-left img{
   height: 130px;
   padding:10px;
 }
 .first-hit-photo img{
-  height: 80%;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  padding: 0px;
 }
 .first-hit{
   margin-bottom: 10px;
-  height: 460px;
-  border: 1px solid #f3f3f3;
-  width: 75%;
+  height: 500px;
+  border: 1px solid hsl(0deg 0% 75%);
   margin: auto;
-}
-.first-hit-top{
-  height: 75%;
-  overflow:hidden;
+  padding: 10px;
+  cursor: pointer;
 }
 .first-hit-body{
   height: 20%;
@@ -61,7 +63,19 @@ div#relHits{
   font-size: 36px;
   font-weight: bold;
   text-align: center;
+  color: hsl(0deg 0% 7%)
 }
 .first-hit-abstract{
   text-align: center;
+  color: hsl(0deg 0% 35%);
+}
+.hit-abstract{
+  color: hsl(0deg 0% 35%);
+  padding-top: 10px;
+}
+
+@media (max-width: 1000px) {
+  .hit-abstract{
+    display: none;
+  }
 }
