@@ -1,0 +1,21 @@
+{
+  "name": "NewsApp",
+  "description": "An app that displays the news",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "parcel index.html --port 3000",
+    "build": "parcel build index.html",
+    "type": "module"
+  },
+  "devDependencies": {
+    "concurrently": "^6.4.0",
+    "parcel-bundler": "1.12.5"
+  },
+  "dependencies": {
+    "algoliasearch": "^4.11.0",
+    "instantsearch.js": "^4.36.0",
+    "parcel": "^2.0.1"
+  }
+}

@@ -1,0 +1,67 @@
+body{
+  background-color: lightgrey;
+}
+p{
+  color: blue;
+}
+ol {
+  list-style-type: none;
+}
+a{
+  color:black;
+}
+div#relHits{
+  width: 100%;
+  float: left;
+  overflow:hidden;
+}
+.hit-title{
+  font-size: 30px;
+  font-weight: bold;
+}
+.hit {
+  margin-bottom: 10px;
+  height: 150px;
+  border: 1px solid #f3f3f3;
+}
+.hit-left{
+  width: 15%;
+  float: left;
+  overflow:hidden;
+}
+.hit-body{
+  width: 85%;
+  float:left;
+}
+.hit-left img{
+  height: 130px;
+  padding:10px;
+}
+.first-hit-photo img{
+  height: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.first-hit{
+  margin-bottom: 10px;
+  height: 460px;
+  border: 1px solid #f3f3f3;
+  width: 75%;
+  margin: auto;
+}
+.first-hit-top{
+  height: 75%;
+  overflow:hidden;
+}
+.first-hit-body{
+  height: 20%;
+}
+.first-hit-title{
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+}
+.first-hit-abstract{
+  text-align: center;
+}
