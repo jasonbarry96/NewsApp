@@ -1,8 +1,12 @@
 body{
   background-color: white;
 }
+h1{
+  text-align: center;
+}
 p{
   color: blue;
+  text-align: center;
 }
 ol {
   list-style-type: none;
@@ -14,8 +18,8 @@ a{
   text-decoration: none;
 }
 div#news{
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 22%;
+  padding-right: 22%;
 }
 div#sections{
   height: 50px;
@@ -26,7 +30,6 @@ div#hits{
   width: 100%;
   float: left;
   overflow:hidden;
-  padding-right: 15%;
 }
 .hit-title{
   font-size: 30px;
@@ -102,4 +105,8 @@ div#hits{
   }
   .hit-left{
     width: 15%;
+  }
+  div#news{
+    padding: 0;
+  }
 }
