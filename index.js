@@ -41,7 +41,7 @@ search.addWidgets([
     ]),
     instantsearch.widgets.index({indexName:"current_news_datetime_desc"}).addWidgets([
         instantsearch.widgets.hits({
-            container: "#relHits",
+            container: "#hits",
             templates: {item: hitTemplate,}
         }),
         instantsearch.widgets.configure({

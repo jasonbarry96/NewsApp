@@ -6,17 +6,27 @@ p{
 }
 ol {
   list-style-type: none;
+  padding-inline-start: 0px;
+
 }
 a{
   color: hsl(0deg 0% 7%);
   text-decoration: none;
 }
-
-div#relHits{
+div#news{
+  padding-left: 40px;
+  padding-right: 40px;
+}
+div#sections{
+  height: 50px;
+  border-top: 1px solid hsl(0deg 0% 75%);
+  border-bottom: 1px solid hsl(0deg 0% 75%);
+}
+div#hits{
   width: 100%;
   float: left;
   overflow:hidden;
-  padding-right: 5%;
+  padding-right: 15%;
 }
 .hit-title{
   font-size: 30px;
@@ -75,11 +85,7 @@ div#relHits{
   color: hsl(0deg 0% 35%);
   padding-top: 10px;
 }
-div#sections{
-  height: 50px;
-  border-top: 1px solid hsl(0deg 0% 75%);
-  border-bottom: 1px solid hsl(0deg 0% 75%);
-}
+
 .refinementList{
   list-style-type: none;
   overflow: hidden;
